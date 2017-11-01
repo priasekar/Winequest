@@ -1,0 +1,3 @@
+!function(a,b){Drupal.behaviors.ATfastclickInitialize={attach:function(a){FastClick.attach(b.body)}}}(jQuery,document);
+
+!function(a,b,c){"use strict";function d(d,e){function f(b){g.addClass("is-horizontal");var c=g.find(".is-responsive__list"),d=0;c.find(".is-responsive__item").each(function(){d+=a(this).outerWidth(!0)});var e=c.outerWidth(!0)<=d;1==e?g.removeClass("is-horizontal").addClass("is-vertical"):g.removeClass("is-vertical").addClass("is-horizontal")}var g=a(e);a(c).on("resize.lists",b.debounce(f,150)).trigger("resize.lists")}b.behaviors.atRL={attach:function(b){var c=a(b).find("[data-at-responsive-list]");c.length&&c.once().each(d)}}}(jQuery,Drupal,window);
